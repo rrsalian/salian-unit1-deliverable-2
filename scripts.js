@@ -10,9 +10,9 @@
 
 */
 
-let playerName = prompt("Welcome to GC mini golf! What is your name?");
+let playerName = prompt("Welcome to GC mini golf! What is your name?").trim();
 
-if ((playerName == "") || (playerName === null)) {
+if (!playerName) {
     console.warn("Not able to proceed without a name. Please re-try later");    
 }
 else {
